@@ -7,6 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- title -->
     <title>TechWave</title>
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,9 +27,24 @@
                 </ul>
             </div>
             <div class="button">
-                <button class="text-white px-5 py-2 rounded-full cursor-pointer">Subscribe</button>
+                <button class="text-white px-5 py-2 rounded-full cursor-pointer">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </nav>
+
+        <!-- banner section -->
+        <section class="banner flex flex-col justify-center items-center">
+            <div class="container w-[1200px] mx-auto flex flex-col justify-center items-center">
+                <div class="img flex justify-center items-center rounded-full">
+                    <img src="./image/microphone.png" alt="">
+                </div>
+                <h1 class="text-5xl font-bold mt-10 mb-5 text-white">TechWave</h1>
+                <p>TechWave is a technology company that provides technology solutions to businesses.</p>
+                <div class="button-box flex gap-5 mt-5">
+                    <button class="spotify text-white px-5 py-2 rounded-full cursor-pointer flex items-center gap-2"> <img src="./image/spotify.png" alt="">Listen on Spotify</button>
+                    <button class="subscribe text-[var(--fourth-color)] px-5 py-2 rounded-full cursor-pointer flex items-center gap-2 border-1 border-[var(--fourth-color)]"> <img src="./image/message.png" alt="">Listen on Apple Podcast</button>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 </html>

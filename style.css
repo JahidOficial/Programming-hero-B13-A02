@@ -17,6 +17,11 @@ body{
   --tertiary-color: #9100F8;
   --linear-gradient: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--tertiary-color));
   --bg-color: #1A0B2E;
+  --fourth-color: #00FF88;
+}
+p{
+  font-size: 16px;
+  color: #c7c7c7;
 }
 
 nav .logo a span{
@@ -27,7 +32,8 @@ nav .logo a span{
 header nav .button button{
   background: var(--linear-gradient);
 }
-header nav .button button:hover{
+header nav .button button:hover,
+.banner button.spotify:hover{
   background: linear-gradient(225deg, var(--primary-color), var(--secondary-color), var(--tertiary-color));
 }
 nav ul li a{
@@ -36,3 +42,33 @@ nav ul li a{
 nav ul li a:hover{
   color: var(--secondary-color);
 }
+
+
+/* banner section */
+.banner{
+  background-image: url(./image/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border-top: 1px solid #9100f83e;
+}
+.banner .img{
+  width: 350px;
+  height: 350px;
+  background: var(--linear-gradient);
+  box-shadow: 0 0 16px 1px #9100f8ad;
+  border-radius: 50%;
+}
+.banner img{
+  width: 140px;
+}
+.banner button.spotify{
+  background: var(--linear-gradient);
+}
+.banner button img{
+  width: 20px;
+}
+
+
+
