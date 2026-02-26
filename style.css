@@ -107,3 +107,11 @@ nav ul li a:hover{
 .fa-hornbill{
   color: var(--secondary-color);
 }
+
+
+
+/* featured section */
+.featured-card .card{
+  background: var(--section-bg-2);
+  height: 100%;
+}
