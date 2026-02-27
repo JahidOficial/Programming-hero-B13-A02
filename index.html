@@ -14,33 +14,37 @@
 </head>
 <body>
     <!-- header -->
-    <header class="bg-[var(--bg-color)]">
-        <nav class="container w-[1200px] mx-auto flex justify-between items-center py-4">
-            <div class="logo text-3xl font-bold">
+    <header class="bg-[var(--bg-color)] hidden">
+        <nav class="container xl:max-w-[1200px] mx-auto flex justify-between items-center py-4">
+            <div class="logo text-3xl font-bold max-sm:pl-5">
                 <a href="#" class="text-white">Tech<span>Wave</span></a>
             </div>
-            <div class="menu">
+            <div class="menu max-sm:hidden">
                 <ul class="flex gap-15 text-white">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="button">
+            <div class="button max-sm:hidden">
                 <button class="text-white px-5 py-2 rounded-full cursor-pointer">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </nav>
+        <div class="bar sm:hidden">
+            <img src="./image/hamburger-menu.png" alt="menu-btn" class="w-8 h-8 absolute right-5 top-5">
+        </div>
 
         <!-- banner section -->
         <section class="banner flex flex-col justify-center items-center">
-            <div class="container w-[1200px] mx-auto flex flex-col justify-center items-center">
+            <div class="container xl:max-w-[1200px] mx-auto flex flex-col justify-center items-center">
                 <div class="img flex justify-center items-center rounded-full">
                     <img src="./image/microphone.png" alt="">
                 </div>
                 <h1 class="text-5xl font-bold mt-10 mb-5 text-white">TechWave</h1>
-                <p>TechWave is a technology company that provides technology solutions to businesses.</p>
-                <div class="button-box flex gap-5 mt-5">
+                <p class="text-center">TechWave is a technology company that provides technology solutions to businesses.</p>
+                <div class="button-box flex flex-wrap justify-center items-center gap-5 mt-5">
                     <button class="spotify text-white px-5 py-2 rounded-full cursor-pointer flex items-center gap-2"> <img src="./image/spotify.png" alt="">Listen on Spotify</button>
+
                     <button class="subscribe text-[var(--fourth-color)] px-5 py-2 rounded-full cursor-pointer flex items-center gap-2 border-1 border-[var(--fourth-color)]"> <img src="./image/message.png" alt="">Listen on Apple Podcast</button>
                 </div>
             </div>
@@ -49,16 +53,16 @@
 
 
     <!-- about section -->
-    <section class="about bg-[var(--section-bg)] pt-[70px] pb-[100px]">
-        <div class="container w-[1200px] mx-auto">
+    <section class="about bg-[var(--section-bg)] pt-[70px] pb-[100px] hidden">
+        <div class="container xl:max-w-[1200px] mx-auto">
             <div class="flex justify-between items-center flex-col">
-                <div class="about-content flex flex-col justify-center items-center gap-4 w-[65%] text-center pb-[50px]">
+                <div class="about-content flex flex-col justify-center items-center gap-4 w-[65%] max-md:w-[90%] text-center pb-[50px]">
                     <h1 class="text-4xl font-bold text-white">About The Podcast</h1>
                     <p class="mb-4">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.</p>
                     <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
                 </div>
                 <div class="about-details w-full pt-[50px]">
-                    <div class="flex justify-between items-center">
+                    <div class="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 max-md:gap-8 justify-between items-center">
                         <div class="flex flex-col justify-center items-center gap-4">
                             <h1 class="text-4xl font-bold text-[var(--fourth-color)]">150k+</h1>
                             <p>MONTHLY LISTENERS</p>
@@ -120,7 +124,7 @@
 
 
     <!-- featured section -->
-    <section class="featured bg-[var(--section-bg)] py-[120px]">
+    <section class="featured bg-[var(--section-bg)] py-[120px] hidden">
         <div class="container w-[1200px] mx-auto">
             <div class="featured-heading text-center">
                 <h1 class="text-4xl font-bold text-white mb-10">Featured Episodes</h1>
@@ -170,7 +174,7 @@
         </div>
 
         <!-- Meet the host -->
-        <div class="container w-[1200px] mx-auto mt-[120px]">
+        <div class="container w-[1200px] mx-auto mt-[120px] hidden">
             <div class="host-heading text-center">
                 <h1 class="text-4xl font-bold text-white mb-10">Meet the Host</h1>
             </div>
@@ -194,7 +198,7 @@
 
 
     <!-- footer section -->
-    <footer class="flex items-center">
+    <footer class="flex items-center hidden">
         <div class="container w-[1200px] mx-auto">
             <div class="footer-content flex flex-col items-center justify-center gap-8">
                 <h1 class="text-6xl font-bold text-white">Tech<span>Wave</span></h1>
